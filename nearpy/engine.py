@@ -70,7 +70,7 @@ class Engine(object):
         self.lshashes = lshashes
         if distance is None: distance = CosineDistance()
         self.distance = distance
-        if vector_filters is None: vector_filters = [NearestFilter(10)]
+        if vector_filters is None: vector_filters = [NearestFilter(15)]
         self.vector_filters = vector_filters
         if fetch_vector_filters is None: fetch_vector_filters = [UniqueFilter()]
         self.fetch_vector_filters = fetch_vector_filters
